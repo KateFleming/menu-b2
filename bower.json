@@ -1,0 +1,23 @@
+{
+  "name": "menu-b2",
+  "version": "0.0.1",
+  "homepage": "https://github.com/chriseisenbraun/menu-b2",
+  "authors": [
+    "Chris Eisenbraun <hello@chriseisenbraun.com>"
+  ],
+  "description": "Simple HTML and CSS drop down menu.",
+  "main": "menu.html",
+  "keywords": [
+    "CSS",
+    "menu"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}
