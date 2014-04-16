@@ -1,0 +1,134 @@
+/**** Google Font ***/
+ @import url(http://fonts.googleapis.com/css?family=Audiowide);
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Clear fix */
+ .clear:before, .clear:after {
+  display: table;
+  content:' ';
+}
+
+.clear:after {
+  clear: both;
+}
+
+/**** Page Stlying ***/
+html {
+  font-family:'Audiowide', cursive;
+  background: #1b1722;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  color: #00f0f9;
+  text-shadow: -2px 4px 0 #ff8c27;
+}
+
+.wrap {
+  width: 90%;
+  margin: .625em auto;
+}
+
+/**** Menu Stlying ***/
+nav {
+  width: 100%;
+  height: 2.3em;
+  background: #ff8c27;
+}
+
+ul, li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul {
+  width: 100%;
+  height: 2em;
+  background: #00f0f9;
+}
+
+li {
+  position: relative;
+  /* position is needed for dropdown */
+}
+
+li a {
+  line-height: 2em;
+  display: block;
+  padding: 0 1em;
+  text-decoration: none;
+  color: #ff8c27;
+}
+
+li a:hover, .top > li:hover > a {
+  position: relative;
+  top: -.3em;
+  height: 2.3em;
+  padding-top: .3em;
+  color: #00f0f9;
+  border-radius: .3em .3em 0 0;
+  background: #ff8c27;
+}
+
+.current, a:hover.current {
+  position: relative;
+  top: -.3em;
+  height: 2.3em;
+  padding-top: .3em;
+  cursor: default;
+  color: #00f0f9;
+  border-radius: .3em .3em 0 0;
+  background: #ff8c27;
+}
+
+/* Drop down menu styles */
+ ul.sub {
+  position: absolute;
+  top: 2.3em;
+  left: -9999em;
+  float: none;
+  overflow: hidden;
+  width: auto;
+  height: auto;
+  max-height: 0;
+  transition: max-height .6s ease-in-out;
+  background: #ff8c27;
+}
+
+ul.sub li {
+  float: none;
+}
+
+.top li:hover ul {
+  left: 0;
+  max-height: 20em;
+}
+
+.sub li a {
+  padding: .6em 1em;
+  white-space: nowrap;
+  color: #00f0f9;
+  border-bottom: 1px solid #333;
+}
+
+.sub li:last-child a {
+  border-bottom: none;
+}
+
+.sub li a:hover {
+  top: 0;
+  height: inherit;
+  padding-top: .2em position: relative;
+  color: #555;
+  border-radius: 0;
+  background: #ff8c27;
+}
